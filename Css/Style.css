@@ -163,7 +163,7 @@ body {
 
 /* ---------------player-section---------------------*/
 .player-area{
-   margin-bottom: 160px; 
+   margin-bottom: 150px; 
 }
 
 .players {
@@ -288,4 +288,52 @@ body {
     font-size: 18px;
     font-weight: 400;
     margin-top: 0;
+}
+
+/* ========================================
+            Media Queary
+========================================= */
+/*---------- Mobile-Responsive -----------*/
+
+@media only screen and (max-width: 668px) {
+    .container{
+        width: 100%;
+    }
+    .container, .header-area, #header, .heading-area, .highlights{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+         
+    }
+    .heading-animation, .highlights-image, .main-heading h1, .highlights-title h2{
+       text-align: center;
+    }
+    .heading-animation, .highlights-image{
+          margin-top: 50px;
+        
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        align-content: center;
+    }
+    .link-button{
+        margin-left: 25%;
+        padding: 10px 10%;
+    }
+    .home, .login{
+        padding-left:0 10%;
+        margin: 0 5%;
+    }
+    .player-area, #main{
+        margin-bottom: 60px; 
+     }
+     .footer-logo img{
+         width:45%;
+        }
+}
+/*-------------- Tab_Responsive -----------*/
+@media only screen and (min-width: 668px) {
+
 }
