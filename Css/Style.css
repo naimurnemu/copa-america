@@ -30,14 +30,6 @@ body {
         Media quary-Rasponsiveness 
  ==========================================*/
 
-
-
-
-
-
-
-
- 
 /*=========================================
                  Header Area 
 ========================================*/
@@ -47,41 +39,44 @@ body {
     background-color: #2d25a0;
     margin-bottom: 50px;
 }
-.header-area{
+.header-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-
 /*------ Nav -------*/
-.nav-area{
+.nav-area {
     background-image: linear-gradient(to right, #f86060, #8897ff);
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
-    
+    align-items: center;
 }
-.nav-bar{
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
-.home{
+.home {
     margin-left: 20px;
     font-weight: normal;
     font-size: 20px;
+}
+.home a {
+    text-decoration: none;
     color: #fff;
 }
-.login{
-     margin-right: 20px;
-     color: yellow;
+.login {
+    margin-right: 20px;
 }
-
+.login a {
+    text-decoration: none;
+    color: yellow;
+}
 
 /* ----Header------ */
 .heading-area {
@@ -101,9 +96,7 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     padding-left: 10px;
-    
 }
-
 
 /*-----Animation---- */
 .heading-animation {
@@ -158,12 +151,11 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 150px;
-    
 }
 
 /* ---------------player-section---------------------*/
-.player-area{
-   margin-bottom: 150px; 
+.player-area {
+    margin-bottom: 150px;
 }
 
 .players {
@@ -192,7 +184,7 @@ body {
 .player-info {
     text-align: justify;
 }
-.player-info h3{
+.player-info h3 {
     margin-top: 16px;
     margin-bottom: 10px;
 }
@@ -204,87 +196,83 @@ body {
 }
 
 /*--------------------- Highlights Section------------------*/
-.highlights{
+.highlights {
     display: flex;
     flex-direction: row;
 }
-.highlights-title{
+.highlights-title {
     width: 50%;
     margin-right: 30px;
     padding: 10px;
 }
-.highlights-title h2{
+.highlights-title h2 {
     font-size: 45px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 8px;
 }
-.highlights-title p{
+.highlights-title p {
     text-align: justify;
-    color: #6C6C6C;
+    color: #6c6c6c;
     font-weight: normal;
     line-height: 28px;
 }
 
-.highlights-image{
+.highlights-image {
     width: 50%;
     text-align: center;
 }
-.highlights-image img{
+.highlights-image img {
     width: 94%;
 }
-
 
 /* ==================================================
                     Footer Area
 ===================================================*/
- #footer{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
- .footer{
-     margin-top: 0;
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(3, auto);
-     grid-gap: 20px;
- }
- .footer-logo{
-     text-align: center;
-     padding: 0;
- }
-.footer-logo img{
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+.footer-logo {
+    text-align: center;
+    padding: 0;
+}
+.footer-logo img {
     width: 65%;
 }
-.social-icon{
+.social-icon {
     text-align: center;
 }
-.icon{
+.icon {
     display: inline-block;
     color: #fff;
     width: 30px;
     height: 30px;
     font-size: 22px;
     background-color: #c0c0c0;
-    border-radius: 60%; 
+    border-radius: 60%;
     padding: 10px;
     margin: 0 7px;
-    
 }
-.icon a{
+.icon a {
     text-decoration: none;
-     
 }
-.icon i{
+.icon i {
     color: #5e5e5e;
 }
-.copyrights{
+.copyrights {
     text-align: center;
-    
 }
-.copyrights p{
+.copyrights p {
     font-size: 18px;
     font-weight: 400;
     margin-top: 0;
@@ -296,44 +284,100 @@ body {
 /*---------- Mobile-Responsive -----------*/
 
 @media only screen and (max-width: 668px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .container, .header-area, #header, .heading-area, .highlights{
+    .container,
+    .header-area,
+    #header,
+    .heading-area,
+    .highlights {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         align-content: center;
-         
     }
-    .heading-animation, .highlights-image, .main-heading h1, .highlights-title h2{
-       text-align: center;
-    }
-    .heading-animation, .highlights-image{
-          margin-top: 50px;
-        
-    }
-    .players{
+    .players {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 1fr);
         align-content: center;
     }
-    .link-button{
+
+    .heading-animation,
+    .highlights-image,
+    .main-heading h1,
+    .highlights-title h2 {
+        text-align: center;
+    }
+    .heading-animation,
+    .highlights-image {
+        margin-top: 50px;
+    }
+    .player-area,
+    #main {
+        margin-bottom: 50px;
+    }
+    .link-button {
         margin-left: 25%;
         padding: 10px 10%;
     }
-    .home, .login{
-        padding-left:0 10%;
+    .home,
+    .login {
+        padding-left: 0 10%;
         margin: 0 5%;
     }
-    .player-area, #main{
-        margin-bottom: 60px; 
-     }
-     .footer-logo img{
-         width:45%;
-        }
+
+    .footer-logo img {
+        width: 45%;
+    }
 }
 /*-------------- Tab_Responsive -----------*/
-@media only screen and (min-width: 668px) {
+@media only screen and (min-width: 668px) and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
 
+    .container,
+    .header-area,
+    #header,
+    .heading-area,
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-content: center;
+    }
+
+    .heading-animation,
+    .highlights-image,
+    .main-heading h1,
+    .highlights-title h2 {
+        text-align: center;
+    }
+    .heading-animation,
+    .highlights-image {
+        margin-top: 85px;
+    }
+    .player-area,
+    #main {
+        margin-bottom: 85px;
+    }
+    .link-button {
+        margin-left: 25%;
+        padding: 10px 45px;
+    }
+    .home,
+    .login {
+        padding-left: 0 10%;
+        margin: 0 5%;
+    }
+    .footer-logo img {
+        width: 50%;
+    }
 }
