@@ -144,7 +144,7 @@ body {
 }
 
 .heading-area:hover .football {
-    transform: rotate(180deg) translate(0, 200px);
+    transform: rotate(180deg) translate(-500px, 100px);
     transform-origin: top center;
 }
 
@@ -198,7 +198,9 @@ body {
 }
 
 .player-info p {
-    text-overflow: ellipsis;
+    font-weight: normal;
+    line-height: 26px;
+    color: #6c6c6c;
 }
 
 /*--------------------- Highlights Section------------------*/
@@ -220,7 +222,8 @@ body {
 .highlights-title p{
     text-align: justify;
     color: #6C6C6C;
-    font-weight: normal;line-height: 28px;
+    font-weight: normal;
+    line-height: 28px;
 }
 
 .highlights-image{
@@ -264,7 +267,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 22px;
-    background-color: #969BAB;
+    background-color: #c0c0c0;
     border-radius: 60%; 
     padding: 10px;
     margin: 0 7px;
@@ -273,6 +276,9 @@ body {
 .icon a{
     text-decoration: none;
      
+}
+.icon i{
+    color: #5e5e5e;
 }
 .copyrights{
     text-align: center;
