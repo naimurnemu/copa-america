@@ -23,7 +23,21 @@ body {
     background-color: #e02c6d;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 40px;}
+    padding: 10px 40px;
+}
+
+/*===========================================
+        Media quary-Rasponsiveness 
+ ==========================================*/
+
+
+
+
+
+
+
+
+ 
 /*=========================================
                  Header Area 
 ========================================*/
@@ -33,8 +47,40 @@ body {
     background-color: #2d25a0;
     margin-bottom: 50px;
 }
+.header-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 /*------ Nav -------*/
+.nav-area{
+    background-image: linear-gradient(to right, #f86060, #8897ff);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+.home{
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #fff;
+}
+.login{
+     margin-right: 20px;
+     color: yellow;
+}
 
 
 /* ----Header------ */
@@ -46,6 +92,7 @@ body {
 }
 .main-heading {
     width: 420px;
+    text-align: left;
 }
 .main-heading h1 {
     font-size: 56px;
@@ -54,6 +101,7 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     padding-left: 10px;
+    
 }
 
 
