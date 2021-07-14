@@ -1,0 +1,96 @@
+/*========================================
+                web-fonts 
+=======================================*/
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*=======================================
+        Common CSS or Utilities 
+======================================*/
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*=========================================
+                 Header Area 
+========================================*/
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: #2d25a0;
+}
+
+/*------ Nav -------*/
+
+/* ----Header------ */
+.heading-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.main-heading {
+    width: 420px;
+}
+.main-heading h1 {
+    font-size: 56px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.link-button {
+    background-color: #e02c6d;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+/*-----Animation---- */
+.heading-graphics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    width: 420px;
+    background-image: url(../images/graphics/blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    transition: transform 0.5s linear 0.1s;
+}
+.heading-graphics img {
+    width: 330px;
+}
+
+.football-cup {
+    background-image: url(../images/graphics/copa-cup.png);
+    background-position: -9999px;
+    transition: background-position 0.2s ease-in-out 1.2s;
+}
+.football {
+    transition: transform 0.5s ease-in 0.6s;
+}
+
+
+.heading-area:hover .heading-graphics {
+    transform: scale(1.2);
+}
+.heading-area:hover .football-cup {
+    background-size: 480px;
+    background-position: -120px;
+    background-repeat: no-repeat;
+}
+ 
+.heading-area:hover .football {
+    transform: rotate(180deg) translate(0, 200px);
+    transform-origin: top center;
+}
