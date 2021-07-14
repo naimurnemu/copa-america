@@ -74,10 +74,11 @@ body {
 .football-cup {
     background-image: url(../images/graphics/copa-cup.png);
     background-position: -9999px;
-    transition: background-position 0.2s ease-in-out 1.2s;
+    background-repeat: no-repeat;
+    transition: background-position 2s ease-in-out 0.1s;
 }
 .football {
-    transition: transform 0.5s ease-in 0.6s;
+    transition: transform 1s ease-in 1s;
 }
 
 
