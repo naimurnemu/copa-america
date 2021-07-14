@@ -62,13 +62,13 @@ body {
     background-image: url(../images/graphics/blue-bg.png);
     background-repeat: no-repeat;
     background-size: 280px;
-    background-position: center;
+    background-position: 170px 2px;
     padding-top: 20px;
     margin-top: 10px;
     transition: transform 0.5s linear 0.1s;
 }
 .heading-graphics img {
-    width: 330px;
+    width: 350px;
 }
 
 .football-cup {
@@ -86,7 +86,7 @@ body {
 }
 .heading-area:hover .football-cup {
     background-size: 480px;
-    background-position: -120px;
+    background-position: -80px;
     background-repeat: no-repeat;
 }
  
