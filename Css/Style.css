@@ -280,7 +280,24 @@ body {
 
 /* ------------Match Section-----------*/
 .matchs-area{
+    background-image: linear-gradient(to right, seagreen, skyblue);
+    color: #fff;
+    border-radius: 10px;
+     
+}
+.matchs-area h2{
+    color: #3b2063;
+}
+.match-goals{
+    display: flex;
+    text-decoration: row;
+    justify-content: center;
+    align-items: center;
+     
+}
+.team{
     text-align: center;
+    padding: 100px;
 }
 
 
@@ -350,7 +367,7 @@ body {
     .header-area,
     #header,
     .heading-area,
-    .highlights {
+    .highlights, .match-goals  {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -406,7 +423,7 @@ body {
     .header-area,
     #header,
     .heading-area,
-    .highlights {
+    .highlights, .match-goals  {
         flex-direction: column;
         align-items: center;
         justify-content: center;
