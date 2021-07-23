@@ -370,6 +370,7 @@ body {
         align-items: center;
         justify-content: center;
         align-content: center;
+        overflow-x: hidden;
     }
     .news-row {
         align-content: center;
@@ -426,6 +427,7 @@ body {
         align-items: center;
         justify-content: center;
         align-content: center;
+        overflow-x: hidden;
     }
     .news-row {
         align-content: center;
